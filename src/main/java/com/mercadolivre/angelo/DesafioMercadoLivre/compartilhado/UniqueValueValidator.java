@@ -23,8 +23,7 @@ public class UniqueValueValidator implements ConstraintValidator<UniqueValue,Obj
 
     @Override
     public boolean isValid(Object value, ConstraintValidatorContext context){
-        System.out.println(klass.getName());
-        System.out.println(domainAttribute);
+
         Query query = manager.createQuery("select 1 from "+klass.getName()+" where "+domainAttribute+"=:value");
         query.setParameter("value",value);
         List<?> list = query.getResultList();

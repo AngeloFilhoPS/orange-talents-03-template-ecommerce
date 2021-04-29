@@ -1,4 +1,4 @@
-package com.mercadolivre.angelo.DesafioMercadoLivre.entity;
+package com.mercadolivre.angelo.DesafioMercadoLivre.cadastroUsuario;
 
 import com.mercadolivre.angelo.DesafioMercadoLivre.cadastroUsuario.SenhaLimpa;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -28,6 +28,7 @@ public class Usuario {
     private String senha;
 
     @NotNull
+    @PastOrPresent
     private LocalDateTime criadoEm = LocalDateTime.now();
 
     @Deprecated

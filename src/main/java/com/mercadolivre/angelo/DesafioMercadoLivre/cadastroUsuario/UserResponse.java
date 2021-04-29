@@ -1,6 +1,4 @@
-package com.mercadolivre.angelo.DesafioMercadoLivre.form;
-
-import com.mercadolivre.angelo.DesafioMercadoLivre.entity.Usuario;
+package com.mercadolivre.angelo.DesafioMercadoLivre.cadastroUsuario;
 
 public class UserResponse {
     private Long id;
