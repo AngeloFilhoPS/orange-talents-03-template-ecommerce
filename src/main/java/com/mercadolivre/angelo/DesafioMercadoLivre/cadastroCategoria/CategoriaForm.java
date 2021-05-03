@@ -12,7 +12,6 @@ public class CategoriaForm {
     @UniqueValue(domainClass = Categoria.class, fieldName = "nome")
     @NotBlank
     private String nome;
-    @ExistId(entity = Categoria.class, campo = "nome")
     private Long idMae;
 
 
